@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberRAR Spam Shield - Protect Yourself from Spam Messages</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>CyberRAR</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#detector" class="nav-link">Spam Detector</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="cyber-grid"></div>
+            <div class="floating-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="cyber-text">CyberRAR</span>
+                    <span class="shield-text">Spam Shield</span>
+                </h1>
+                <p class="hero-tagline">Protect Yourself from Spam Messages with Advanced Detection</p>
+                <div class="hero-buttons">
+                    <a href="downloads/app.apk" class="download-btn" download>
+                        <i class="fab fa-android"></i>
+                        Download Android App
+                    </a>
+                    <a href="#detector" class="try-web-btn">
+                        <i class="fas fa-globe"></i>
+                        Try Web Version
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="app-header">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Spam Shield</span>
+                            </div>
+                            <div class="message-preview">
+                                <div class="message safe">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Safe Message</span>
+                                </div>
+                                <div class="message spam">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Spam Detected</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">App Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Detection</h3>
+                    <p>Advanced machine learning algorithms analyze message patterns to identify spam with high accuracy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-Time Analysis</h3>
+                    <p>Instant spam detection as messages arrive, keeping your inbox clean and secure.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy Protected</h3>
+                    <p>Your messages are analyzed locally on your device, ensuring complete privacy and security.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Available on Android with web version support for all your devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spam Detection Tool -->
+    <section id="detector" class="spam-detector">
+        <div class="container">
+            <h2 class="section-title">Spam Detection Tool</h2>
+            <p class="section-subtitle">Test our spam detection algorithm with any message</p>
+            
+            <div class="detector-interface">
+                <div class="input-section">
+                    <label for="message-input">Enter or paste your message:</label>
+                    <textarea 
+                        id="message-input" 
+                        placeholder="Paste your message here to check if it's spam..."
+                        rows="6"
+                    ></textarea>
+                    <button id="check-spam-btn" class="check-btn">
+                        <i class="fas fa-search"></i>
+                        Check for Spam
+                    </button>
+                </div>
+                
+                <div class="result-section" id="result-section">
+                    <div class="result-card" id="result-card">
+                        <div class="result-icon" id="result-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3 id="result-title">Ready to Analyze</h3>
+                        <p id="result-description">Enter a message above and click "Check for Spam" to see the results.</p>
+                        <div class="confidence-meter" id="confidence-meter">
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidence-fill"></div>
+                            </div>
+                            <span class="confidence-text" id="confidence-text">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Message Analysis</h3>
+                        <p>Our algorithm analyzes the text for common spam indicators including suspicious keywords, patterns, and formatting.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Pattern Recognition</h3>
+                        <p>Advanced pattern matching identifies typical spam characteristics like urgent language, promotional content, and suspicious links.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Risk Assessment</h3>
+                        <p>Each message receives a risk score based on multiple factors, providing you with clear spam probability results.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Instant Results</h3>
+                        <p>Get immediate feedback with color-coded results and confidence levels to help you make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Support</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions or need support? We're here to help!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@cyberrar.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Support Available</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>CyberRAR Spam Shield</span>
+                    </div>
+                    <p>Advanced spam detection for the modern world.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#home">Features</a></li>
+                            <li><a href="#detector">Web Detector</a></li>
+                            <li><a href="downloads/app.apk">Download App</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberRAR Spam Shield. All rights reserved. | Version 1.0.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
